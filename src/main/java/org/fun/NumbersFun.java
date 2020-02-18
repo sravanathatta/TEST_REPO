@@ -15,13 +15,22 @@ public class NumbersFun {
             return "Buzz";
         }
 
-        if(number%3==0){
+        if(number%3==0 || number%10==3 || contains(number, 3)){
             return "Fizz";
         }
 
-        if(number%10==3){
-            return "Fizz";
-        }
         return Integer.toString(number);
+    }
+
+    private boolean contains(int numberToCheck, int whatNumber){
+        int reminder = 0;
+        while (numberToCheck > 0){
+            reminder = numberToCheck%10;
+            if(reminder==whatNumber){
+                return true;
+            }
+            numberToCheck/=10;
+        }
+        return false;
     }
 }
