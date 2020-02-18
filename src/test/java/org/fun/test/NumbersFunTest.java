@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 public class NumbersFunTest {
 
-    NumbersFun numbersFun = new NumbersFun();
+    private NumbersFun numbersFun = new NumbersFun();
 
     @Test
     public void when_the_number_is_3_then_the_application_should_print_fizz(){
@@ -59,4 +59,13 @@ public class NumbersFunTest {
         assertEquals("Buzz", numbersFun.getNumber(52));
     }
 
+    @Test
+    public void when_a_non_divisible_number_by_3_or_5_or_number_without_3_or_5_then_the_number_should_returned(){
+        assertEquals("1", numbersFun.getNumber(1));
+    }
+
+    @Test
+    public void when_input_19_I_should_get_19(){
+        assertEquals("19", numbersFun.getNumber(19));
+    }
 }
