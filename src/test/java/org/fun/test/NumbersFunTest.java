@@ -53,4 +53,10 @@ public class NumbersFunTest {
     public void when_a_number_starts_with_39_in_it_should_return_fizz(){
         assertEquals("Fizz", numbersFun.getNumber(39));
     }
+
+    @Test
+    public void when_a_number_contains_5_in_it_should_return_fizz(){
+        assertEquals("Buzz", numbersFun.getNumber(52));
+    }
+
 }
