@@ -3,6 +3,9 @@ package org.fun;
 public class NumbersFun {
 
     public String getNumber(int number){
-        return "Fizz";
+        if(number%3==0){
+            return "Fizz";
+        }
+        return Integer.toString(number);
     }
 }
