@@ -25,6 +25,11 @@ public class NumbersFunTest {
     }
 
     @Test
+    public void when_the_number_is_zero_then_error_should_be_returned(){
+        assertEquals("Invalid Input. Number to should 0 or greater", numbersFun.getNumber(-1));
+    }
+
+    @Test
     public void when_the_number_is_5_it_should_return_buzz(){
         assertEquals("Buzz", numbersFun.getNumber(5));
     }

@@ -11,3 +11,5 @@ This is a simple Java 8 application that prints the numbers. But with below exce
  * JUnit 5
  
 
+* Execution
+ Import this project using any IDE as maven project. As a sample run, execute main method in `NumbersFun.java` which prints the numbers fun up to 100
