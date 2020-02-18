@@ -24,4 +24,9 @@ public class NumbersFunTest {
         assertEquals("Invalid Input. Number to should 0 or greater", numbersFun.getNumber(-1));
     }
 
+    @Test
+    public void when_the_number_is_5_it_should_be_buzz(){
+        assertEquals("Buzz", numbersFun.getNumber(5));
+    }
+
 }
