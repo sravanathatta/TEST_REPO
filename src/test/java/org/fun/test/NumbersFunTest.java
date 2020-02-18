@@ -28,4 +28,9 @@ public class NumbersFunTest {
     public void when_the_number_is_5_it_should_return_buzz(){
         assertEquals("Buzz", numbersFun.getNumber(5));
     }
+
+    @Test
+    public void when_the_number_is_divisble_by_5_it_should_return_buzz(){
+        assertEquals("Buzz", numbersFun.getNumber(10));
+    }
 }
