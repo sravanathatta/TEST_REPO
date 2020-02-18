@@ -11,7 +11,7 @@ public class NumbersFun {
             return "FizzBuzz";
         }
 
-        if(number%5==0){
+        if(number%5==0 || contains(number, 5)){
             return "Buzz";
         }
 
