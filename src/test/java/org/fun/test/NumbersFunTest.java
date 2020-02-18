@@ -25,8 +25,7 @@ public class NumbersFunTest {
     }
 
     @Test
-    public void when_the_number_is_5_it_should_be_buzz(){
+    public void when_the_number_is_5_it_should_return_buzz(){
         assertEquals("Buzz", numbersFun.getNumber(5));
     }
-
 }

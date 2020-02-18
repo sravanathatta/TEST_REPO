@@ -7,6 +7,10 @@ public class NumbersFun {
             return "Invalid Input. Number to should 0 or greater";
         }
 
+        if(number==5){
+            return "Buzz";
+        }
+
         if(number%3==0){
             return "Fizz";
         }
