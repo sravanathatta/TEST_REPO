@@ -33,4 +33,9 @@ public class NumbersFunTest {
     public void when_the_number_is_divisble_by_5_it_should_return_buzz(){
         assertEquals("Buzz", numbersFun.getNumber(10));
     }
+
+    @Test
+    public void when_the_number_is_divisble_by_3_and_5_it_should_return_fizz_buzz(){
+        assertEquals("FizzBuzz", numbersFun.getNumber(15));
+    }
 }
