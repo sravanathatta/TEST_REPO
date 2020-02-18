@@ -18,6 +18,10 @@ public class NumbersFun {
         if(number%3==0){
             return "Fizz";
         }
+
+        if(number%10==3){
+            return "Fizz";
+        }
         return Integer.toString(number);
     }
 }
