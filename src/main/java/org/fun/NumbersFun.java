@@ -36,10 +36,10 @@ public class NumbersFun {
         return false;
     }
 
-    public static void main(String ar[]) {
+/*    public static void main(String ar[]) {
         NumbersFun numbersFun = new NumbersFun();
         IntStream.range(1, 101).forEach(
                 nbr -> System.out.println(numbersFun.getNumber(nbr))
         );
-    }
+    }*/
 }
